@@ -22,6 +22,7 @@ public class SimpleTest {
 
         Thread.sleep(3000);
 
+
         browser.close();
     }
 }
