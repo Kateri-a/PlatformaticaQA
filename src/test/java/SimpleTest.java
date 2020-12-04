@@ -16,9 +16,13 @@ public class SimpleTest {
         browser.get("https://github.com/SergeiDemyanenko/PlatformaticaQA");
         WebElement name = browser.findElement(By.xpath("//strong/a"));
 
+        WebElement name1 = browser.findElement(By.xpath("//a[contains(text(),'PlatformaticaQA')]"));
+        Assert.assertEquals(name1.getText(), "PlatformaticaQA");
+
         Assert.assertEquals(name.getText(), "PlatformaticaQA");
 
-        Thread.sleep(3000);
+        Thread.sleep(4000);
+
         browser.close();
     }
 }
